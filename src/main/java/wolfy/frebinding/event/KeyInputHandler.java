@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import org.lwjgl.glfw.GLFW;
 
 public class KeyInputHandler {
@@ -53,8 +53,8 @@ public class KeyInputHandler {
             /* Show Tooltips */
             if (showTooltips.wasPressed()) {
                 client.options.advancedItemTooltips = !client.options.advancedItemTooltips;
-                if (client.options.advancedItemTooltips) client.player.sendMessage(Text.translatable("showTooltips.enabled"), false);
-                else client.player.sendMessage(Text.translatable("showTooltips.disabled"), false);
+                if (client.options.advancedItemTooltips) client.player.sendMessage(new TranslatableText("showTooltips.enabled"), false);
+                else client.player.sendMessage(new TranslatableText("showTooltips.disabled"), false);
             }
 
             /* Show Hitboxes */
@@ -63,8 +63,8 @@ public class KeyInputHandler {
                 if (entityRenderDispatcher != null) {
                     Hitbox = !Hitbox;
                     entityRenderDispatcher.setRenderHitboxes(Hitbox);
-                    if (Hitbox) client.player.sendMessage(Text.translatable("showHitboxes.enabled"), false);
-                    else client.player.sendMessage(Text.translatable("showHitboxes.disabled"), false);
+                    if (Hitbox) client.player.sendMessage(new TranslatableText("showHitboxes.enabled"), false);
+                    else client.player.sendMessage(new TranslatableText("showHitboxes.disabled"), false);
                 }
             }
 
@@ -72,14 +72,14 @@ public class KeyInputHandler {
             if (showChunkBorder.wasPressed()) {
                 ChunkBorder = !ChunkBorder;
                 client.debugRenderer.toggleShowChunkBorder();
-                if (ChunkBorder) client.player.sendMessage(Text.translatable("showChunkBorder.enabled"), false);
-                else client.player.sendMessage(Text.translatable("showChunkBorder.disabled"), false);
+                if (ChunkBorder) client.player.sendMessage(new TranslatableText("showChunkBorder.enabled"), false);
+                else client.player.sendMessage(new TranslatableText("showChunkBorder.disabled"), false);
             }
 
             /* Reload Textures */
             if (reloadResources.wasPressed()) {
                 client.reloadResources();
-                client.player.sendMessage(Text.translatable("reloadResources.reloaded"), false);
+                client.player.sendMessage(new TranslatableText("reloadResources.reloaded"), false);
             }
 
             /* Clear Chat */
