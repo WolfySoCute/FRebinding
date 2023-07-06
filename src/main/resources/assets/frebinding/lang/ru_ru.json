@@ -1,0 +1,20 @@
+{
+  "category.frebinding.special": "Специальные бинды",
+
+  "key.frebinding.showTooltips": "Показать подсказки предметов",
+  "showTooltips.enabled": "Подсказки включены",
+  "showTooltips.disabled": "Подсказки отключены",
+
+  "key.frebinding.showHitboxes": "Показать хитбоксы",
+  "showHitboxes.enabled": "Хитбоксы включены",
+  "showHitboxes.disabled": "Хитбоксы отключены",
+
+  "key.frebinding.showChunkBorder": "Показать чанки",
+  "showChunkBorder.enabled": "Чанки включены",
+  "showChunkBorder.disabled": "Чанки отключены",
+
+  "key.frebinding.reloadResources": "Перезагрузить текстуры",
+  "reloadResources.reloaded": "Текстуры перезагружены",
+
+  "key.frebinding.clearChat": "Очистить чат"
+}

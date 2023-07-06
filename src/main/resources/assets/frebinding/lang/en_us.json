@@ -1,0 +1,20 @@
+{
+  "category.frebinding.special": "Special keybinds",
+
+  "key.frebinding.showTooltips": "Show Advanced Item Tooltips",
+  "showTooltips.enabled": "Tooltips are enabled",
+  "showTooltips.disabled": "Tooltips are disabled",
+
+  "key.frebinding.showHitboxes": "Show Hitboxes",
+  "showHitboxes.enabled": "Hitboxes are enabled",
+  "showHitboxes.disabled": "Hitboxes are disabled",
+
+  "key.frebinding.showChunkBorder": "Show Chunks",
+  "showChunkBorder.enabled": "Chunks are enabled",
+  "showChunkBorder.disabled": "Chunks are disabled",
+
+  "key.frebinding.reloadResources": "Reload Textures",
+  "reloadResources.reloaded": "Textures are reloaded",
+
+  "key.frebinding.clearChat": "Clear Chat"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "frebinding",
+  "version": "${version}",
+  "name": "FRebinding",
+  "description": "A simple mod for additional binding of F3 button combinations",
+  "authors": ["wolfy"],
+  "contact": {
+    "repo": "https://github.com/Wolfy/FRebinding"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/frebinding/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "wolfy.frebinding.client.FRebindingClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
