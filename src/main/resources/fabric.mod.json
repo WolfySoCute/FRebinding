@@ -4,13 +4,13 @@
   "version": "${version}",
   "name": "FRebinding",
   "description": "A simple mod for additional binding of F3 button combinations",
-  "authors": ["wolfy"],
+  "authors": ["WolfySoCute"],
   "contact": {
-    "repo": "https://github.com/Wolfy/FRebinding"
+    "sources": "https://github.com/WolfySoCute/FRebinding"
   },
   "license": "GPL-3.0",
   "icon": "assets/frebinding/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "client": [
       "wolfy.frebinding.client.FRebindingClient"
