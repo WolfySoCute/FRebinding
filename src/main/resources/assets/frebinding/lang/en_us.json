@@ -16,5 +16,9 @@
   "key.frebinding.reloadResources": "Reload Textures",
   "reloadResources.reloaded": "Textures are reloaded",
 
-  "key.frebinding.clearChat": "Clear Chat"
+  "key.frebinding.clearChat": "Clear Chat",
+
+  "key.frebinding.autoPause": "Switching the auto-pause",
+  "autoPause.enabled": "Auto-pause are enabled",
+  "autoPause.disabled": "Auto-pause are disabled"
 }

@@ -16,5 +16,9 @@
   "key.frebinding.reloadResources": "Перезагрузить текстуры",
   "reloadResources.reloaded": "Текстуры перезагружены",
 
-  "key.frebinding.clearChat": "Очистить чат"
+  "key.frebinding.clearChat": "Очистить чат",
+
+  "key.frebinding.autoPause": "Переключить авто-паузу",
+  "autoPause.enabled": "Авто-пауза включена",
+  "autoPause.disabled": "Авто-пауза отключена"
 }
