@@ -48,6 +48,13 @@ public class KeyInputHandler {
             KEY_CATEGORY
     ));
 
+    public static KeyBinding autoPause = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+            "key.frebinding.autoPause",
+            InputUtil.Type.KEYSYM,
+            GLFW.GLFW_KEY_P,
+            KEY_CATEGORY
+    ));
+
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             /* Show Tooltips */
@@ -85,6 +92,13 @@ public class KeyInputHandler {
             /* Clear Chat */
             if (clearChat.wasPressed()) {
                 client.inGameHud.getChatHud().clear(true);
+            }
+
+            /* Auto Pause */
+            if (autoPause.wasPressed()) {
+                client.options.pauseOnLostFocus = !client.options.pauseOnLostFocus;
+                if (client.options.pauseOnLostFocus) client.player.sendMessage(new TranslatableText("autoPause.enabled"), false);
+                else client.player.sendMessage(new TranslatableText("autoPause.disabled"), false);
             }
         });
     }
